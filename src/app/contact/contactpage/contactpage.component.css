@@ -138,4 +138,7 @@ form .btn{
         width: 100%;
         
     }
+    .input_box {
+        display: block;
+    }
 }
