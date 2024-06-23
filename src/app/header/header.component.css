@@ -228,15 +228,18 @@ header{
         width: 100%;
         height: 100%;
         right: unset;
+
         
        
     }
     .mobile_menu{
         display: block;
+        right: 0px;
+
     }
     .desktop_menu ul{
 
-        
+        width: 100%;
         height: 100%;
         padding-top: 50px;
 
