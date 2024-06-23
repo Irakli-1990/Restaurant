@@ -1,0 +1,40 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-3">
+               <div class="logo-container">
+                <img routerLink="/" class="logo" style="width: 90px;" src="../../assets/header_logo/OIP.jpg" alt="">
+                <h1> <span><i class="fa-solid fa-utensils"></i></span> Restoran</h1>
+               </div>
+            </div>
+            <div class="col-md-9 col-sm-9 col-9 text-end " style="display: flex; justify-content: end;">
+                <div class="menu-icon" (click)="openMenu()" #icon>
+                    <i class=" {{menuIcon}}"></i>
+                </div>
+                <div class="desktop_menu" [class.mobile_menu]="menuValue">
+                    <ul>
+
+                        <li routerLink="/" (click)="close()">Home</li>
+                        <li routerLink="/about" (click)="close()">About</li>
+                        <li routerLink="/menu" (click)="close()">Menu</li>
+                        <li routerLink="/contact" (click)="close()">Contact</li>
+  
+                            <button  routerLink="/login" (click)="close()" class="login"><i style="margin-right: 8px;" class="fa-solid fa-user"></i> Login </button>
+                    </ul>
+
+
+                </div>
+
+<span style="color:  white;">  </span>
+
+
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+

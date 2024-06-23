@@ -1,0 +1,59 @@
+<section>
+    <div class="shooping">
+        <h4>Shopping Cart</h4>
+        <h5> <span>{{cartLength}}</span> Items </h5>
+    </div>
+    <div class="container">
+        
+        <table class="table">
+            <thead>
+              <tr>
+                <th  scope="col">Product</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+        
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of cartList" class="last">
+                <td> 
+                  <div class="listImg">
+                    <img [src]="item.product.image" alt="">
+                    <div class="list_image_name">
+                        <h6> {{item.product.name}} </h6>
+                        <button (click)="deleteItem(item.product.id)" class="">Remove</button>
+
+                    </div>
+
+                </div>    
+                </td>
+
+
+                <td>
+
+                   <div class="quantity">
+                    <button (click)="increase(item)">+</button>
+                    <h5> {{item.quantity}} </h5>
+                    <button (click)="decrease(item)">-</button>
+                   </div>
+
+                </td>
+
+                <td class="price_total"> <h6>{{item.product.price | currency}}</h6> </td>
+                <td class="price_total"> <h6>{{item.product.price * item.quantity | currency }}</h6> </td>
+
+              </tr>
+
+
+
+        
+            </tbody>
+          </table>
+    </div>
+
+    <div class="continu">
+       <a routerLink="/menu">Continu Shopping</a>   
+       <h4>Total <span style="color: black; letter-spacing: 0px; font-weight: 400; font-family: sans-serif;"> {{allPrice | currency}} </span> </h4>    
+    </div>
+</section>

@@ -1,0 +1,136 @@
+section{
+    width: 100%;
+    display: flex;
+    
+}
+.cont{
+    width: 90% ;
+    background-color: #0F172B;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row div{
+    width: 339px;
+    height: 322px;
+    color: white;
+    padding: 30px 10px;
+
+}
+.row div h4{
+    font-family: 'Shadows Into Light', sans-serif ;
+    margin-left: 30px;
+    color: #FEA116;
+    font-size: 32px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.row div a{
+    text-decoration: none;
+    color: white;
+}
+
+.row div a::before{
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.row div input{
+    width: 250px;
+}
+.row div button{
+    background-color: #FEA116;
+}
+
+.copyright{
+    height: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-top: 1px solid rgb(134, 117, 117);
+   
+}
+.row_footer{
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.row_footer p a{
+    color: gray;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+
+.footer_menu a{
+   text-decoration: none;
+   color: white;
+   margin-right: 25px;
+   font-size: 16px;
+}
+
+
+@media screen and (max-width: 1520px) {
+    
+    section{
+        width: 100%;
+        display: flex;
+        
+    }
+    section .cont .row{
+        display: flex;
+        justify-content: center;
+       padding: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 1050px) {
+    
+
+.row_footer{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+}
+
+@media screen and (max-width: 880px){
+ 
+
+    .col-lg-3{
+        padding: 0px 10px !important;
+        height: 280px !important;
+        border-bottom: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+    }
+
+    .row div button{
+        background-color: #FEA116;
+        width: 140px;
+        
+    }
+    .row_footer p{
+        display: none;
+    }
+}

@@ -1,0 +1,56 @@
+
+
+
+
+<section>
+
+    <form class="login_form" *ngIf="!showHideForm">
+        <h2>Login</h2>
+        <div class="input-field">
+            <input type="text" required [(ngModel)]="loginObj.email" [ngModelOptions]="{standalone: true}">
+            <label>Enter your email</label>
+        </div>
+        <div class="input-field">
+            <input type="password" required [(ngModel)]="loginObj.password" [ngModelOptions]="{standalone: true}">
+            <label>Enter your password</label>
+        </div>
+        
+        <div class="check_div">
+        <label for="remember">
+            <input type="checkbox" id="remember" >
+        </label>
+        <p>Remember me</p>
+
+        </div>
+        <button (click)="logUser()">Log In</button>
+        <div class="account">
+            <p>Dont'have an account? <a  (click)="register()" >Sign Up</a></p>
+        </div>
+    </form>
+    
+    
+    <form class="register_form" *ngIf="showHideForm" >
+        <h2>Sign Up</h2>
+        <div class="input-field">
+            <input type="text" [(ngModel)]="signupObj.userName" [ngModelOptions]="{standalone: true}">
+            <label>Enter your Name</label>
+        </div>
+        <div class="input-field">
+            <input type="text"  [(ngModel)]="signupObj.email" [ngModelOptions]="{standalone: true}">
+            <label>Enter your email</label>
+        </div>
+        <div class="input-field">
+            <input type="password" [(ngModel)]="signupObj.password" [ngModelOptions]="{standalone: true}">
+            <label >Enter your password</label>
+        </div>
+        
+   
+        <button (click)="signUp()" class="signUp">Sign Up</button>
+        <div class="account">
+            <p> Back to Login <a (click)="login()" >Login</a></p>
+        </div>
+    </form>
+
+
+
+</section>

@@ -1,0 +1,212 @@
+section  {
+    width: 100%;
+    min-height: 500px;
+    margin-bottom: 40px;
+}
+.container{
+   
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.shooping{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    border-bottom: 1px solid gray;
+    padding: 0 15px;
+}
+.shooping span{
+     font-size: 29px;
+     color: black;
+     
+     
+}
+.shooping h4 {
+    font-size: 28px;
+    font-family: 'Shadows Into Light', sans-serif ;
+    color: #FEA116;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.continu{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.continu h4{
+    padding-right: 60px;
+    font-size: 28px;
+    font-family: 'Shadows Into Light', sans-serif ;
+    color: #FEA116;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.continu a{
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    font-size: 24px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    color: #FEA116;
+}
+.table{
+    width: 80%;
+    text-align: start;
+}
+.table thead{
+  background-color: aqua;
+
+}
+
+.table thead tr th{
+    font-size: 19px;
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+
+}
+
+.table tbody tr{
+  height: 80px;
+
+}
+
+.table tbody tr td{
+    padding-top: 20px;
+
+
+}
+.table tbody tr td img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gray;
+    box-shadow: 1px 2px 9px gold;
+}
+.listImg{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.list_image_name button{
+  border: none;
+  border-bottom: 1px solid red;
+  color: rgb(246, 77, 77);
+  background-color: transparent;
+
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 18px;
+}
+.quantity button{
+   font-weight: bold;
+   font-size: 25px;
+   border: none;
+   border-radius: 10px;
+   width: 40px;
+   height: 40px;
+}
+.quantity h5{
+    margin-top: 13px;
+    width: 30px;
+    text-align: center;
+}
+.price_total h6{
+margin-top: 29px;
+width: 50px;
+
+
+}
+
+@media screen and (max-width: 600px) {
+ 
+ section{
+    margin-bottom: 20px;
+ }
+    .shooping{
+        width: 90%;
+     
+    }
+
+
+    .container{
+   
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+
+    .table{
+        width: 80%;
+        text-align: start;
+    }
+  
+    
+    .table thead tr th{
+        font-size: 17px;
+
+    }
+    
+    .table tbody tr{
+      height: 90px;
+    
+    }
+    
+
+    .table tbody tr td img{
+        width: 80px;
+        height: 80px;
+      
+    }
+
+
+    .quantity{
+        display: flex;
+        gap: 1px;
+    }
+    .quantity button{
+       font-size: 21px;
+       border-radius: unset;
+       width: 24px;
+       height: 24px;
+    }
+    .quantity h5{
+        width: 20px;
+    }
+
+ 
+
+      .listImg{
+        position: relative;
+      }
+      .list_image_name h6{
+        position: absolute;
+        top: 2px;
+        width: 200px;
+        
+      }
+
+      .continu{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .continu h4{
+        padding-right: 5px;
+        font-size: 23px;
+        order: -1;
+    }
+    .continu a{
+        border-bottom: unset;
+        text-decoration: underline;
+        
+    }
+}

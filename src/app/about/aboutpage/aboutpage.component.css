@@ -1,0 +1,201 @@
+section{
+  padding: 70px 30px;
+}
+
+section .cont{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    padding: 25px;
+    
+}
+ .img_cont{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 46% 46%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 15px;
+    padding: 10px;
+    
+    
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img2{
+    display: flex;
+    align-items: end;
+}
+.img2 img{
+    width: 70%;
+    height: 73%;
+
+}
+.img3{
+    display: flex;
+    justify-content: end;
+}
+.img3 img{
+    width: 70%;
+    height: 73%;
+}
+
+
+section .cont .cont_info{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cont_info h5{
+    font-size: 28px;
+    font-family: 'Shadows Into Light', sans-serif ;
+    color: #FEA116;
+    font-weight: bold;
+}
+.cont_info h1{
+    font-size: 45px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.cont_info .cont_exper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+} 
+.cont_info button{
+    width: 170px;
+    height: 50px;
+    color: white;
+    background-color: #FEA116;
+    border: none;
+    font-size: 19px;
+
+    transition: .7s;
+
+}
+.cont_info button:hover{
+    background-color: #d18007;
+    color: black;
+    transition: .7s;
+
+}
+
+.cont_exper .exper_box{
+    width: 50%;
+    border-left: 6px solid goldenrod;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.exper_box div{
+    display: flex;
+    flex-direction: column;
+    line-height: 1px;
+    margin-top: 15px;
+}
+.exper_box p{
+    color: gray;
+}
+
+
+section .container .row div{
+    width: 300px;
+}
+
+
+
+
+
+@media screen and (max-width: 1270px) {
+  
+       section .cont{
+
+        width: 100%;
+        flex-direction: column;
+        height: unset;
+        align-items: center;
+        gap: 30px;
+    
+    }
+
+}
+
+@media screen and (max-width: 870px) {
+  
+
+    
+
+ .img_cont{
+    width: 90%;
+}
+
+
+section .cont .cont_info{
+    width: 95%;
+
+}
+
+}
+
+@media screen and (max-width: 670px){
+  
+
+    section{
+         padding: 40px 0px;
+       }
+
+    .img_cont{
+        width: 100%;
+        grid-template-columns: 51% 51%;
+        grid-gap: 11px;
+        padding: 10px;
+    }
+    
+
+    
+
+    .img2 img{
+        width: 79%;
+        height: 78%;
+    
+    }
+  
+    .img3 img{
+        width: 79%;
+        height: 78%;
+    }
+
+
+
+    .cont_info .cont_exper {
+
+    flex-direction: column;
+        gap: 35px;
+    } 
+
+
+ 
+}
