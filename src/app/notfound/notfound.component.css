@@ -13,17 +13,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 150px;
+    padding-bottom: 60px;
 }
 .number{
     display: flex;
     align-items: center;
 }
 .number h1{
-    font-size: 370px;
+    font-size: 300px;
 }
 .number h5{
-    font-size: 250px;
+    font-size: 240px;
 }
 .pageText{
     display: flex;
@@ -32,7 +32,7 @@
     margin-bottom: 10px;
 }
 .pageText h1{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
 }
 .pageText p{
